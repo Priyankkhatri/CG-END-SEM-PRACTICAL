@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="value">0</h1>
+
+    <button id="decrease">-</button>
+    <button id="increase">+</button>
+
+
+
+
+<script>
+    let count = Number(localStorage.getItem("count"));
+    let h = document.querySelector("#value");
+    let btn1 = document.querySelector("#increase");
+    let btn2 = document.querySelector("#decrease");
+
+    h.textContent = count;
+
+    btn1.addEventListener("click", ()=>{
+        count++;
+        h.textContent = count;
+        localStorage.setItem("count", count);
+    });
+
+    btn2.addEventListener("click", ()=>{
+        count--;
+        h.textContent = count;
+        localStorage.setItem("count", count);
+    });
+    
+</script>
+</body>
+</html>

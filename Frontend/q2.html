@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            display: flex;
+            width: 600px;
+    }
+
+.col_box1, .col_box2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.col_box1 .row1{ 
+    background: rgb(217, 39, 39); 
+    height: 100px; 
+}
+.col_box1 .row2{ 
+    background: rgb(208, 150, 42); 
+    height: 100px; 
+}
+.col_box1 .row3{ 
+    background: rgb(248, 248, 37); 
+    height: 100px; 
+}
+
+.col_box2 .row1{ 
+    background: rgb(21, 21, 180); 
+    height: 100px; 
+}
+.col_box2 .row2{ 
+    background: rgb(47, 177, 47); 
+    height: 100px; 
+}
+.col_box2 .row3{ 
+    background: rgb(0, 238, 255); 
+    height: 100px; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+  <div class="col_box1">
+    <div class="row1">Row 1</div>
+    <div class="row2">Row 2</div>
+    <div class="row3">Row 3</div>
+  </div>
+
+  <div class="col_box2">
+    <div class="row1">Row 1</div>
+    <div class="row2">Row 2</div>
+    <div class="row3">Row 3</div>
+  </div>
+</div>
+
+</body>
+</html>
